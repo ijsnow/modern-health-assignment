@@ -2,6 +2,8 @@
 
 This project contains a GraphQL API that interacts with a PostgreSQL database using the Sequelize ORM. I used the [graphql-sequelize](https://github.com/mickhansen/graphql-sequelize) library to easily create a graphql API out of the Sequelize models. In addition to this I used [dataloader-sequelize](https://github.com/mickhansen/dataloader-sequelize) to ensure the same data isn't fetched from the database twice.
 
+I chose to use GraphQL because it is becoming the industry standard for API development. There is a rich ecosystem of tools making development fast and easy. I chose to use `graphql-sequelize` because it not only makes it easy to set up GraphQL resolvers, but it does work for you to keep queries efficient. For example, it only includes fields requested by the client in the query to the database. This is possible on your own but takes some extra work.
+
 ## Prerequisites
 
 - [Docker](https://www.docker.com/get-started)
