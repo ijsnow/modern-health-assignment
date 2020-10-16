@@ -7,7 +7,7 @@ This project contains a GraphQL API that interacts with a PostgreSQL database us
 - [Docker](https://www.docker.com/get-started)
 - Node v13 (optional)
 
-## Getting started
+## Running the project
 
 To start the database and run the api server, run the following command:
 
@@ -50,3 +50,7 @@ docker exec -it $CONTAINER sh -c "npm test"
 ```
 
 You can run these tests locally as well provided you have node installed and there aren't dependency version issues with node and npm. I used node v13.13.0 during development. To run the tests locally, just run `npm i` followed by `npm test`.
+
+## Future work
+
+The database is set up using `Sequelize.sync` for simplicity. In the real world, migrations should be used to set up the database.
